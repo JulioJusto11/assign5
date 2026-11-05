@@ -2,7 +2,7 @@ import yfinance as yf
 import streamlit as st
 import yfinance as yf
 # Fetches 5 years of AAPL data and prints the final overall average closing price.
-st.title("Julio Justo AAPL 5-Year Average Stock Price")
+st.title("AAPL 5-Year Average Stock Price")
 # Fetch 5 years of historical data for AAPL
 data = yf.Ticker("AAPL").history(period="5y")
 if not data.empty:
